@@ -1,0 +1,140 @@
+/* 1. Universal reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* 2. Base body styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f8;
+  color: #222;
+  line-height: 1.6;
+  /* 3. Header styling */
+header {
+  background-color: #1e293b;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+
+header p {
+  color: #cbd5e1;
+}
+/* 4. Navigation */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #334155;
+  border-radius: 4px;
+}
+/* 5. Main content and sections */
+main {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+section {
+  background-color: white;
+  padding: 24px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+/* 6. Features grid */
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+  list-style: none;
+}
+
+.features li {
+  background-color: #f8fafc;
+  padding: 20px;
+  border-radius: 8px;
+}
+/* 7. Shortcuts table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #cbd5e1;
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background-color: #e2e8f0;
+}
+/* 8. Feedback form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #cbd5e1;
+  border-radius: 4px;
+  font: inherit;
+}
+
+form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+/* 9. Buttons */
+button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #1e293b;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #334155;
+  transform: translateY(-2px);
+}
+/* 10. Mobile styles */
+@media (max-width: 600px) {
+  header {
+    padding: 20px 12px;
+  }
+
+  header h1 {
+    font-size: 1.6rem;
+  }
+
+  main {
+    padding: 0 12px;
+  }
+}
+}
