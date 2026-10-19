@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f5f7fa">
+    <title>Daily notes</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main class="notes-card">
+      <header class="page-header">
+        <div>
+          <p class="eyebrow">A quiet place to think</p>
+          <h1>Daily notes</h1>
+        </div>
+        <button id="theme-toggle" class="button button-secondary" type="button">Dark mode</button>
+      </header>
+
+      <label for="note-text">What’s on your mind?</label>
+      <textarea id="note-text" maxlength="200" placeholder="Start writing…" rows="9"></textarea>
+
+      <div class="note-footer" aria-live="polite" aria-atomic="true">
+        <div class="counts">
+          <p id="char-count">0 / 200 characters</p>
+          <span class="count-divider" aria-hidden="true">·</span>
+          <p id="word-count">0 words</p>
+        </div>
+        <button id="clear-btn" class="button button-clear" type="button">Clear notes</button>
+      </div>
+      <p class="save-hint">Your draft saves automatically on this device.</p>
+    </main>
+  </body>
+</html>
