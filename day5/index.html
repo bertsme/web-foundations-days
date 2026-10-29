@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>User Directory | QuickNotes</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="users.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <p class="eyebrow">QuickNotes · Day 5</p>
+      <h1>User Directory</h1>
+      <p>Load a directory from a practice API and filter it by name.</p>
+    </header>
+
+    <main>
+      <section class="directory-panel" aria-labelledby="directory-heading">
+        <div class="panel-heading">
+          <div>
+            <p class="eyebrow">Client ↔ Server</p>
+            <h2 id="directory-heading">People</h2>
+          </div>
+          <button id="load-users" type="button">Load users</button>
+        </div>
+
+        <label for="filter-input">Filter by name</label>
+        <input id="filter-input" type="search" placeholder="Start typing a name…" autocomplete="off">
+        <p id="status" role="status" aria-live="polite">Select “Load users” to fetch the directory.</p>
+        <ul id="users-list" aria-live="polite"></ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>Practice project · Data provided by JSONPlaceholder</p>
+    </footer>
+  </body>
+</html>
