@@ -1,0 +1,7 @@
+# Course Reflection
+
+The most difficult concept for me was understanding how system design estimates connect to architecture decisions. It was easy to list components such as a cache, queue, and database, but harder to explain which part of the traffic each one handles and where correctness matters more than speed. I worked through that by calculating request rates from the facts in each assignment, stating assumptions, and tracing one request step by step. The Day 7 photo-sharing design helped me see that read-heavy traffic can use caches, while Day 8's ticket sale made it clear that seat inventory needs one authoritative, transactional source.
+
+I received a 35/100 on an earlier assignment. I did not receive enough detail in that score alone to know every specific rubric gap, but it showed me I needed to make my work easier to evaluate against the requirements. I would improve my QuickNotes capstone by adding a clearer, more complete architecture explanation and by checking each rubric item explicitly before submission. I would also demonstrate the API's loading, success, empty, and error states so the implementation is as easy to verify as the design documents.
+
+Next, I want to learn how to build and deploy a real API with a relational database, authentication, and automated tests. I especially want to practice database transactions and concurrency by running simultaneous seat-hold requests and proving that only one buyer can reserve a seat.
